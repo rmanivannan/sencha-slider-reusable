@@ -1,0 +1,51 @@
+{
+    "name": "AddressBook",
+    "js": [
+        {
+            "path": "../sencha-touch-2.0.1.1/sencha-touch-all-debug.js"
+        },
+        {
+            "path": "app.js",
+            "update": "delta"
+        }
+    ],
+    "css": [
+        {
+            "path": "resources/css/app.css",
+            "update": "delta"
+        },
+		{
+            "path": "resources/css/CustomSliderOne.css",
+            "update": "delta"
+        },
+    ],
+    "appCache": {
+        "cache": [
+            "index.html",
+        ],
+        "network": [
+            "*"
+        ],
+        "fallback": []
+    },
+    "extras": [
+        "contacts.json",
+        "resources/images",
+        "resources/icons",
+        "resources/loading"
+    ],
+    "archivePath": "archive",
+    "buildPaths": {
+        "testing": "../sencha-touch-2.0.1.1/deploy/testing/navigationview",
+        "production": "../sencha-touch-2.0.1.1/deploy/production/navigationview",
+        "package": "../sencha-touch-2.0.1.1/deploy/package/navigationview",
+        "native": "../sencha-touch-2.0.1.1/deploy/native/navigationview"
+    },
+    "buildOptions": {
+        "product": "touch",
+        "minVersion": 3,
+        "debug": false,
+        "logger": "no"
+    },
+    "id": "buildId"
+}

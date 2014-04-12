@@ -9,37 +9,37 @@ Ext.define('Customslider.view.CustomSliderOne', {
   config: {
     cls: 'CustomSliderOne',
     items: [{
-			html   : 'Lable Name',
-			action : 'sliderLabel',
-			cls    : 'sliderLabel',
+      html   : 'Lable Name',
+      action : 'sliderLabel',
+      cls    : 'sliderLabel',
     }, {
-			html   : 'value',
-			action : 'sliderLablelValue',
-			cls    : 'sliderLablelValue',
+      html   : 'value',
+      action : 'sliderLablelValue',
+      cls    : 'sliderLablelValue',
     }, {
-			action : 'decBtn',
-			cls    : 'decBtn',
+      action : 'decBtn',
+      cls    : 'decBtn',
     }, {
-			action : 'CustomSliderOneVisuls',
-			cls    : 'CustomSliderOneVisuls',
-			html   : [
-								'<div class ="SliderBG"></div>',
-								'<div class ="SliderHeighLightArea"></div>',
-								'<div class ="SliderNob"></div>',
-							].join(''),
+      action : 'CustomSliderOneVisuls',
+      cls    : 'CustomSliderOneVisuls',
+      html   : [
+                '<div class ="SliderBG"></div>',
+                '<div class ="SliderHeighLightArea"></div>',
+                '<div class ="SliderNob"></div>',
+              ].join(''),
     }, {
-			action : 'incBtn',
-			cls    : 'incBtn'
+      action : 'incBtn',
+      cls    : 'incBtn'
     }],
 
     /**
      *  Default slider properties
      */
-		minValue  : -10,
-		maxValue  : 10,
-		divition  : 1,
-		sliderVal : 0,
-		lableName : 'Slider with Default values',
+    minValue  : -10,
+    maxValue  : 10,
+    divition  : 1,
+    sliderVal : 0,
+    lableName : 'Slider with Default values',
   },
 
   /**
@@ -48,26 +48,26 @@ Ext.define('Customslider.view.CustomSliderOne', {
    */
   initialize: function () {
     this.addPageEvents([{
-			'selector'     : 'decBtn',
-			'eventType'    : 'touchstart',
-			'functionName' : 'onSliderOneDec'
-			}, {
-			'selector'     : 'incBtn',
-			'eventType'    : 'touchstart',
-			'functionName' : 'onSliderOneInc'
-			}, {
-			'selector'     : 'CustomSliderOneVisuls',
-			'eventType'    : 'touchstart',
-			'functionName' : 'onSliderOneSeek'
-			}, {
-			'selector'     : 'CustomSliderOneVisuls',
-			'eventType'    : 'touchend',
-			'functionName' : 'onSliderOneSeek'
-			}, {
-			'selector'     : 'CustomSliderOneVisuls',
-			'eventType'    : 'touchmove',
-			'functionName' : 'onSliderOneSeek'
-    	}
+      'selector'     : 'decBtn',
+      'eventType'    : 'touchstart',
+      'functionName' : 'onSliderOneDec'
+      }, {
+      'selector'     : 'incBtn',
+      'eventType'    : 'touchstart',
+      'functionName' : 'onSliderOneInc'
+      }, {
+      'selector'     : 'CustomSliderOneVisuls',
+      'eventType'    : 'touchstart',
+      'functionName' : 'onSliderOneSeek'
+      }, {
+      'selector'     : 'CustomSliderOneVisuls',
+      'eventType'    : 'touchend',
+      'functionName' : 'onSliderOneSeek'
+      }, {
+      'selector'     : 'CustomSliderOneVisuls',
+      'eventType'    : 'touchmove',
+      'functionName' : 'onSliderOneSeek'
+      }
     ])
   },
 
@@ -106,19 +106,19 @@ Ext.define('Customslider.view.CustomSliderOne', {
    * @return {[type]}   [description]
    */
   onSliderOneSeek: function (e) {
-  	console.log(e)
-		var mousePosX            = e.touch.point.x;
-		var sliderEl             = this.element.down('.CustomSliderOneVisuls');
-		var sliderBarOffsetLeft  = sliderEl.dom.offsetLeft;
-		var sliderBarOffsetWidth = sliderEl.dom.offsetWidth;
-		
-		var pos                  = Math.min((mousePosX - sliderBarOffsetLeft) / sliderBarOffsetWidth, 1) * 100;
-		
-		var labelValDiff         = this.getMaxValue() - this.getMinValue();
-		var value1               = this.getMinValue() + labelValDiff * pos / 100;
-		value1                   = value1 - value1 % this.getDivition();
-		
-		this.setSliderVal(value1);
+    console.log(e)
+    var mousePosX            = e.touch.point.x;
+    var sliderEl             = this.element.down('.CustomSliderOneVisuls');
+    var sliderBarOffsetLeft  = sliderEl.dom.offsetLeft;
+    var sliderBarOffsetWidth = sliderEl.dom.offsetWidth;
+    
+    var pos                  = Math.min((mousePosX - sliderBarOffsetLeft) / sliderBarOffsetWidth, 1) * 100;
+    
+    var labelValDiff         = this.getMaxValue() - this.getMinValue();
+    var value1               = this.getMinValue() + labelValDiff * pos / 100;
+    value1                   = value1 - value1 % this.getDivition();
+    
+    this.setSliderVal(value1);
   },
 
 
@@ -136,16 +136,16 @@ Ext.define('Customslider.view.CustomSliderOne', {
    * @param  {[Number]} value [slider value]
    */
   updateSliderVal: function (value) {
-		var sliderVal = value;
-		sliderVal     = sliderVal - this.getMinValue();
-		sliderVal     = sliderVal * 100 / (this.getMaxValue() - this.getMinValue());
+    var sliderVal = value;
+    sliderVal     = sliderVal - this.getMinValue();
+    sliderVal     = sliderVal * 100 / (this.getMaxValue() - this.getMinValue());
 
     this.element.down('.SliderHeighLightArea').setStyle('width', sliderVal + '%');
     this.element.down('.SliderNob').setStyle('left', sliderVal + '%');
 
-		var labelValDiff = this.getMaxValue() - this.getMinValue(),
-		lablelValue      = this.getMinValue() + labelValDiff * sliderVal / 100;
-		lablelValue      = lablelValue - lablelValue % this.getDivition();
+    var labelValDiff = this.getMaxValue() - this.getMinValue(),
+    lablelValue      = this.getMinValue() + labelValDiff * sliderVal / 100;
+    lablelValue      = lablelValue - lablelValue % this.getDivition();
 
     this.child('container[action ="sliderLablelValue"]').element.setHtml(lablelValue);
   },

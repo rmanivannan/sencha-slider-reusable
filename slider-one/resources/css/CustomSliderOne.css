@@ -1,77 +1,81 @@
-/**CustomSliderOne
- * @author manivannan
- * $Id: CustomSliderOne.css mani.jerry@gmail.com $
- */
- 
-.CustomSliderOne{
- background:#999;
- height:170px;
- position: relative;
- width:922px;
-}
-.decBtn,.CustomSliderOneVisuls,.incBtn{
- height:80px;
- float:left;
- margin:10px;
-}
-.incBtn{
- width:80px;
- background:url(../images/plus-minus.png) no-repeat 10px 10px;
-}
-.incBtn:active{
- background:#eee url(../images/plus-minus.png) no-repeat 10px -115px;
-}
-.decBtn{
- width:80px;
- background:url(../images/plus-minus.png) no-repeat -115px 10px;
-}
-.decBtn:active{
- width:80px;
- background:#eee url(../images/plus-minus.png) no-repeat -115px -115px;
-}
-.CustomSliderOneVisuls{
- width:700px;
- position:relative;
-}
-.SliderBG,.SliderHeighLightArea,.SliderNob{
- position: absolute;
- width: 100%;
- height: 50%;
- top: 25%;
- background: red;
-}
-.SliderHeighLightArea{
- background:blue;
-}
-.SliderNob{
-	width:50px;
-	height:50px;
-	left: 0.14285714285714285%;
-	border-radius: 50%;
-	margin-left: -25px;
-	margin-top: -5px;
-	background:url(../images/scroll.png) center center no-repeat;
-	background-size:100% 100%;
-}
-.SliderBG,.SliderHeighLightArea{
-	height: 24%;
-	top: 37%;
-	background: #333;
-	box-shadow: inset 0 0 3px 2px black;
-}
-.SliderHeighLightArea{
-	background: #469FC6;
-}
-.sliderLablelValue{
-	float:right;
-}
-.sliderLabel{
-	float:left;
-}
-.sliderLablelValue,.sliderLabel{
-	margin:10px;
-	color:#eee;
-}
-.decBtn{
-	clear:both;
-}
+  /**CustomSliderOne
+  * @author manivannan
+  * $Id          :CustomSliderOne.css manivannan13tnj@gmail.com $
+  */
+  .cls555{
+  background     :#555;
+  font-family    : arial !important;
+  width          :922px;
+  }
+  .CustomSliderOne{
+  background     :#555;
+  height         :170px;
+  position       :relative;
+  width          :922px;
+  }
+  .decBtn,.CustomSliderOneVisuls,.incBtn{
+  height         :80px;
+  float          :left;
+  margin         :10px;
+  }
+  .incBtn{
+  width          :80px;
+  background     :url(../images/plus-minus.png) no-repeat 10px 10px;
+  }
+  .incBtn        :active{
+  background     :#eee url(../images/plus-minus.png) no-repeat 10px -115px;
+  }
+  .decBtn{
+  width          :80px;
+  background     :url(../images/plus-minus.png) no-repeat -115px 10px;
+  }
+  .decBtn        :active{
+  width          :80px;
+  background     :#eee url(../images/plus-minus.png) no-repeat -115px -115px;
+  }
+  .CustomSliderOneVisuls{
+  width          :700px;
+  position       :relative;
+  }
+  .SliderBG,.SliderHeighLightArea,.SliderNob{
+  position       :absolute;
+  width          :100%;
+  height         :50%;
+  top            :25%;
+  background     :red;
+  }
+  .SliderHeighLightArea{
+  background     :blue;
+  }
+  .SliderNob{
+  width          :50px;
+  height         :50px;
+  left           :0.14285714285714285%;
+  border-radius  :50%;
+  margin-left    :-25px;
+  margin-top     :-5px;
+  background     :url(../images/scroll.png) center center no-repeat;
+  background-size:100% 100%;
+  }
+  .SliderBG,.SliderHeighLightArea{
+  height         :24%;
+  top            :37%;
+  background     :#333;
+  box-shadow     :inset 0 0 3px 2px black;
+  }
+  .SliderHeighLightArea{
+  background     :#469FC6;
+  }
+  .sliderLablelValue{
+  float          :right;
+  }
+  .sliderLabel{
+  float          :left;
+  }
+  .sliderLablelValue,.sliderLabel{
+  margin         :10px;
+  color          :#eee;
+  }
+  .decBtn{
+  clear          :both;
+  }

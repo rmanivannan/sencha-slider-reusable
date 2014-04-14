@@ -6,21 +6,25 @@ This component supports the slider with Plus and minus buttons and allows develo
 ##How to add this component in a sencha touch view ?
 
 ### Example Usage
+  
   requires: [
     'Customslider.view.CustomSlider'
-  ]
+  ],
+  config: {
+    xtype:'Container',
+    cls: 'cls555',
+    scrollable: false,
+    items:[{
+      xtype: 'CustomSlider',
 
-  {
-    /**Adding Slider changes of lableName, sliderVal, minValue, maxValue, division**/
-    xtype: 'CustomSlider',
-
-    /**Initial values to setup the slider**/
-    lableName:'Slider with changes of lableName, sliderVal, minValue, maxValue, division',
-    sliderVal: 10,
-    minValue: 0,
-    maxValue: 100,
-    division: 2,
+      lableName:'Slider with changes of lableName, sliderVal, minValue, maxValue, division',
+      sliderVal: 10,
+      minValue: 0,
+      maxValue: 100,
+      division: 2
+    }]
   }
+  
 
 =========================================
 

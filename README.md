@@ -1,4 +1,4 @@
-#Sencha Tuch Customized Slider Component with highlighted status
+Sencha Tuch Customized Slider Component with highlighted status
 =======================================
 
 This component supports the slider with Plus and minus buttons and allows developer to set label, min, max, initial values.

@@ -6,7 +6,7 @@ This component supports the slider with Plus and minus buttons and allows develo
 ##How to add this component in a sencha touch view ?
 
 ### Example Usage
-  
+```
   requires: [
     'Customslider.view.CustomSlider'
   ],
@@ -24,7 +24,7 @@ This component supports the slider with Plus and minus buttons and allows develo
       division: 2
     }]
   }
-  
+```
 
 =========================================
 

@@ -1,9 +1,9 @@
-Sencha Tuch Customized Slider Component
+Sencha Tuch Customized Slider Component with highlighted status
 =======================================
 
 This component supports the slider with Plus and minus buttons and allows developer to set label, min, max, initial values.
 
-How to add this component in a sencha touch view ?
+#How to add this component in a sencha touch view ?
 
 1] Add 'CustomSlider.js' on views folder.
 

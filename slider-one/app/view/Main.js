@@ -2,7 +2,7 @@ Ext.define('Customslider.view.Main', {
   extend: 'Ext.Container',
   xtype: 'mainview',
   requires: [
-	  'Customslider.view.CustomSliderOne',
+	  'Customslider.view.CustomSlider',
   ],
   config: {
   	xtype:'Container',
@@ -12,19 +12,22 @@ Ext.define('Customslider.view.Main', {
         xtype: 'titlebar',
         title:'Sliders'
       },{
-        xtype: 'CustomSliderOne',
+        /**Adding slider with default values**/
+        xtype: 'CustomSlider',
       },{
-        xtype: 'CustomSliderOne',
+        /**Adding Slider with label change**/
+        xtype: 'CustomSlider',
         lableName:'Slider with label change',
       },{
-        xtype: 'CustomSliderOne',
+        /**Adding Slider changes of lableName, sliderVal, minValue, maxValue, division**/
+        xtype: 'CustomSlider',
 
         /**Initial values to setup the slider**/
-        lableName:'Slider with changes of lableName, sliderVal, minValue, maxValue, divition',
+        lableName:'Slider with changes of lableName, sliderVal, minValue, maxValue, division',
         sliderVal: 10,
         minValue: 0,
         maxValue: 100,
-        divition: 2,
+        division: 2,
       }
     ],
 	}

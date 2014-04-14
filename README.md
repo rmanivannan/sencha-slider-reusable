@@ -39,8 +39,13 @@ requires: ['Customslider.view.CustomSlider']
 3] Used xtype as 'CustomSlider' for adding the slider on view
 
 ###Customizable slider properties:
+
 1.lableName - 'Slider name which will apply as label of the slider'
+
 2.sliderVal - 'Slider initial value on rendering'
+
 3.minValue  - 'Slider minimum value or lowest possible value of the slider'
+
 4.maxValue  - 'Slider maximum value or highest possible value of the slider'
+
 5.division  - 'Slider division value or lowest different between adjacent slider values'

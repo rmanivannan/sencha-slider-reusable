@@ -5,12 +5,14 @@ This component supports the slider with Plus and minus buttons and allows develo
 
 ##How to add this component in a sencha touch view ?
 
-1] Add 'CustomSlider.js' on views folder.
+1] Add 'CustomSlider.js' into your project views folder.
 
-2] Add the 'CustomSlider' on to your view file where required
+2] Add 'CustomSliderOne.css' in to your css folder and include in your project as well.
+
+3] Add the 'CustomSlider' on to your view file where required
 requires: ['Customslider.view.CustomSlider']
 
-3] Used xtype as 'CustomSlider' for adding the slider on view
+4] Used xtype as 'CustomSlider' for adding the slider on view
 
 ### Example Usage
 

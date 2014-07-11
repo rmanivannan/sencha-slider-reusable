@@ -1,4 +1,5 @@
-var currentPage;
+/**
+ *var currentPage;
 Ext.define('Customslider.controller.Application', {
     extend: 'Ext.app.Controller',
 	requires: [
@@ -57,3 +58,5 @@ Ext.define('Customslider.controller.Application', {
 		currentPage.getSliderOneIndex().setSliderVal(currentPage.getSliderOneIndex().getSliderVal()+currentPage.getSliderOneIndex().getDivition());
 	}
 });
+
+**/

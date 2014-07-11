@@ -12,7 +12,7 @@ This component supports the slider with Plus and minus buttons and allows develo
 3] Add the 'CustomSlider' on to your view file where required
 requires: ['Customslider.view.CustomSlider']
 
-4] Use xtype as 'CustomSlider' for adding the slider on view
+4] Use xtype as 'CustomSlider' for adding the slider on the your view
 
 ### Example Usage
 

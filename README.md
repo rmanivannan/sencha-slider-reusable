@@ -14,6 +14,10 @@ requires: ['Customslider.view.CustomSlider']
 
 4] Use xtype as 'CustomSlider' for adding the slider on the your view
 
+###Demo Url
+http://rmanivannan.github.io/demos/sencha-slider-reusable/slider-one/
+
+
 ### Example Usage
 
 ```  
